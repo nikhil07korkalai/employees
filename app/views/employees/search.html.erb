@@ -1,0 +1,17 @@
+<table class="table">
+   
+   <thead>
+      <caption>Employees</caption>
+   </thead>
+   <tbody>
+   	 <% @employees.each_with_index do |employee,index| %>
+      <tr>
+         <td><%= employee.first_name %></td>
+         <td><%= employee.last_name %></td>
+         
+      </tr>
+      <% end %>
+      
+   </tbody>
+</table>
+<%= link_to "list of employee", employees_path%>
